@@ -26,7 +26,3 @@ git clone https://github.com/ESX-Org/esx_voice
 #### Installation
 
 1) Add `start esx_voice` to your server.cfg
-
-
-#### Credits
-Original Script by [aabbfive](https://github.com/aabbfive/voicecontroller)
