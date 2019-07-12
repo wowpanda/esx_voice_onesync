@@ -51,12 +51,10 @@ Citizen.CreateThread(function()
             local boolTalking = NetworkIsPlayerTalking(player)
 
             if player ~= myId then
-                if boolTalking and not talkingPlayers[player] then
+                if boolTalking then
                     PlayFacialAnim(GetPlayerPed(player), 'mic_chatter', 'mp_facial')
-                    talkingPlayers[player] = true
-                elseif not boolTalking and talkingPlayers[player] then
+                elseif not boolTalking then
                     PlayFacialAnim(GetPlayerPed(player), 'mood_normal_1', 'facials@gen_male@variations@normal')
-                    talkingPlayers[player] = nil
                 end
             end
         end
